@@ -1,18 +1,20 @@
 Catat pengeluaran cukup pakai voice note.
 
-Kirim voice note ke bot Telegram, pengeluaran lo langsung kecatat rapi di Google Sheets. Gak perlu buka aplikasi, gak perlu ngetik.
+Kirim voice note atau chat ke bot Telegram. AI yang nyatet ke Google Sheets, lengkap sama kategori, laporan mingguan, dan dashboard.
 
 CARA KERJANYA
-1. Kirim voice note ke bot Telegram lo, misalnya "bensin lima puluh ribu".
-2. AI ngubah voice note jadi data pengeluaran, otomatis lewat Make.com.
-3. Semua pengeluaran ngumpul rapi di Google Sheets, siap lo pantau.
+1. Kirim voice note atau chat, misalnya "bensin 50 ribu, makan siang 35 ribu". Satu pesan boleh berisi beberapa transaksi.
+2. AI ngubah suara jadi teks, misahin per transaksi, terus nentuin pemasukan atau pengeluaran plus kategorinya.
+3. Masuk Google Sheets (tanggal, jam, jenis, kategori, keterangan, jumlah), bot langsung bales konfirmasi.
+4. Pantau di dashboard Looker Studio, plus laporan mingguan otomatis ke Telegram.
 
 YANG LO DAPET
-- Template Make.com, tinggal import
-- Panduan instalasi, dari nol sampai jalan
-- Penjelasan step-by-step, biar bisa lo kembangin sendiri
+- 2 blueprint Make.com (sistem utama & laporan mingguan)
+- Template Google Sheet
+- Dashboard Looker Studio
+- Setup Guide PDF, step-by-step dari nol sampai jalan
 
 YANG LO BUTUHIN
-Akun Telegram, Make.com, dan Google. Detail setup-nya ada di panduan.
+Telegram, Make.com, Google Sheets, dan OpenAI API. Satu-satunya yang berbayar: saldo OpenAI, top up mulai 5 USD (±Rp85rb), bisa dipakai lama.
 
 Gratis. Udah diambil belasan orang.
