@@ -7,7 +7,7 @@
 -->
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>html,body{margin:0!important;padding:0!important;background:#0A0A0A!important;}</style>
-<div style="width:100%;background:#0A0A0A;color:#EDEDED;font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;line-height:1.57;-webkit-font-smoothing:antialiased;box-sizing:border-box;padding:0 16px;">
+<div id="a95-root" style="width:100%;background:#0A0A0A;color:#EDEDED;font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;line-height:1.57;-webkit-font-smoothing:antialiased;box-sizing:border-box;padding:0 16px;">
 <div style="max-width:540px;margin:0 auto;padding:24px 0 0;">
 
   <!-- Wordmark bar -->
@@ -94,4 +94,24 @@
   document.documentElement.style.background = '#0A0A0A';
   document.body.style.margin = '0';
   document.body.style.background = '#0A0A0A';
+
+  // Lapor tinggi isi yang pas ke lynk.id. Script resize bawaan lynk ngukur
+  // documentElement.scrollHeight yang gak bisa nyusut, jadi iframe bisa
+  // kegedean (ada area kosong & scroll kerasa nyangkut sebelum form).
+  (function () {
+    var root = document.getElementById('a95-root');
+    if (!root || window.parent === window) return;
+    var last = 0;
+    function post() {
+      var h = Math.ceil(root.getBoundingClientRect().height);
+      if (!h || h === last) return;
+      last = h;
+      try { window.parent.postMessage({ type: 'sandboxed-iframe-resize', height: h }, '*'); } catch (e) {}
+    }
+    post();
+    window.addEventListener('load', post);
+    window.addEventListener('resize', post);
+    if (window.ResizeObserver) new ResizeObserver(post).observe(root);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(post);
+  })();
 </script>
