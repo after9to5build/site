@@ -1,0 +1,140 @@
+<!--
+  Landing page after9to5build (homepage after9to5build.lynk.id)
+  Desain: Stitch "After Hours Workshop", dirapihin (tanpa glow, tanpa data palsu).
+  Cara pasang: Landing Pages -> komponen HTML -> tempel semua isi file ini -> centang "Fullscreen view" -> Save & Publish.
+  - Gaya inline semua. Satu <script> kecil di bawah cuma buat efek ngetik "after 9 to 5."
+    Kalau script diblok lynk.id, teksnya tetap tampil normal (tanpa animasi).
+  - Email tetap kekumpul di lynk.id: tombol "Get it free" ngarah ke halaman produk bawaan.
+  - Warna: latar #0A0A0A, kartu #121212, bar #0E0E0E, garis #1F1F1F/#262626, teks #EDEDED / #8A8A8A, aksen #39FF88.
+  - Angka "2 builds shipped" diupdate tiap ada produk baru.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- lynk.id naruh HTML ini di iframe yang body-nya punya margin bawaan 8px (jadi ada pinggir putih). Ini yang nolin. -->
+<style>html,body{margin:0!important;padding:0!important;background:#0A0A0A!important;}</style>
+<div style="width:100%;min-height:100vh;background:#0A0A0A;color:#EDEDED;font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;line-height:1.57;-webkit-font-smoothing:antialiased;box-sizing:border-box;padding:0 16px;">
+<div style="max-width:540px;margin:0 auto;padding:24px 0 0;">
+
+  <!-- Wordmark bar -->
+  <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid #1F1F1F;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;">
+    <div style="font-size:14px;font-weight:600;letter-spacing:-0.02em;">after9to5<span style="color:#39FF88;font-weight:500;">build</span><span style="color:#3A3A3A;font-weight:400;margin:0 8px;">/</span><span style="color:#8A8A8A;font-size:11px;font-weight:400;">home</span></div>
+    <div style="font-size:11px;color:#8A8A8A;"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#39FF88;margin-right:6px;vertical-align:middle;position:relative;top:-1px;"></span>night shift</div>
+  </div>
+
+  <!-- Hero -->
+  <div style="margin:36px 0 44px;">
+    <div style="display:inline-block;padding:3px 10px;border-radius:999px;background:#121212;border:1px solid #262626;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#8A8A8A;margin-bottom:18px;">
+      <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#39FF88;margin-right:6px;vertical-align:middle;position:relative;top:-1px;"></span>2 builds shipped
+    </div>
+    <h1 aria-label="Real things, built with AI, after 9 to 5." style="margin:0 0 16px;font-size:clamp(28px,7.6vw,38px);line-height:1.2;font-weight:600;letter-spacing:-0.03em;color:#EDEDED;">
+      Real things, built with AI,<br>
+      <span style="display:inline-block;margin-top:8px;padding:0 12px 2px;border-radius:10px;background:#121212;border:1px solid #262626;white-space:nowrap;"><span id="a95-type">after 9 to 5.</span><span id="a95-cur" style="display:inline-block;width:3px;height:0.82em;background:#39FF88;margin-left:4px;vertical-align:-0.06em;"></span></span>
+    </h1>
+    <div style="font-size:15px;line-height:1.6;color:#8A8A8A;max-width:440px;">
+      Games, tools, and automations you can actually use. Free to try.
+    </div>
+  </div>
+
+  <!-- Latest build -->
+  <div style="margin-bottom:40px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;">
+      <span style="color:#EDEDED;letter-spacing:0.02em;"><span style="color:#39FF88;margin-right:6px;">&#9679;</span>Latest build</span>
+      <span style="color:#8A8A8A;">v1.0</span>
+    </div>
+    <div style="background:#121212;border:1px solid #1F1F1F;border-radius:8px;overflow:hidden;">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 14px;background:#0E0E0E;border-bottom:1px solid #1F1F1F;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:10px;color:#8A8A8A;">
+        <span>itch.io/hutan-terakhir</span>
+        <span style="color:#39FF88;"><span style="display:inline-block;width:5px;height:5px;border-radius:50%;background:#39FF88;margin-right:5px;vertical-align:middle;position:relative;top:-1px;"></span>LIVE</span>
+      </div>
+      <a href="https://after9to5build.itch.io/hutan-terakhir" target="_blank" rel="noopener" style="display:block;border-bottom:1px solid #1F1F1F;">
+        <img src="https://cdn.jsdelivr.net/gh/after9to5build/site@main/img/hutan-terakhir.webp" alt="Hutan Terakhir" style="display:block;width:100%;height:auto;border:0;">
+      </a>
+      <div style="padding:18px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px;">
+          <div style="font-size:20px;line-height:1.3;font-weight:600;letter-spacing:-0.02em;">Hutan Terakhir</div>
+          <span style="flex-shrink:0;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:10px;color:#39FF88;border:1px solid #1E5C38;border-radius:999px;padding:2px 9px;">Free</span>
+        </div>
+        <div style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#8A8A8A;margin-bottom:10px;">3D web game &middot; In Bahasa Indonesia</div>
+        <div style="font-size:14px;line-height:1.6;color:#A1A1A1;margin-bottom:18px;">
+          A satire on Indonesia's forest fires. You play a president who puts out the fires himself, until the rain comes.
+        </div>
+        <a href="https://after9to5build.itch.io/hutan-terakhir" target="_blank" rel="noopener" style="display:block;text-align:center;text-decoration:none;background:#39FF88;color:#0A0A0A;font-size:15px;font-weight:600;padding:12px 16px;border-radius:6px;">Play in browser</a>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:14px;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;">
+          <a href="https://github.com/after9to5build/hutan-terakhir" target="_blank" rel="noopener" style="text-decoration:none;color:#8A8A8A;"><span style="color:#39FF88;">&gt;</span> Open source on GitHub</a>
+          <span style="color:#5A5A5A;">MIT</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Free template -->
+  <div style="margin-bottom:44px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;">
+      <span style="color:#EDEDED;letter-spacing:0.02em;"><span style="color:#39FF88;margin-right:6px;">&#9679;</span>Free template</span>
+      <span style="color:#8A8A8A;">Make.com</span>
+    </div>
+    <div style="background:#121212;border:1px solid #1F1F1F;border-radius:8px;padding:16px;">
+      <div style="display:flex;gap:14px;align-items:flex-start;">
+        <a href="https://lynk.id/after9to5build/n7pyl1qrqp6o" target="_blank" rel="noopener" style="display:block;flex-shrink:0;">
+          <img src="https://cdn.lynkid.my.id/products/08-04-2026/1775664715589_6656623.webp" alt="Expense Tracker AI" style="display:block;width:72px;height:72px;border-radius:6px;border:1px solid #262626;object-fit:cover;">
+        </a>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:17px;line-height:1.3;font-weight:600;letter-spacing:-0.015em;margin-bottom:4px;">Expense Tracker AI</div>
+          <div style="font-size:13px;line-height:1.55;color:#A1A1A1;">Send a voice note to a Telegram bot. Your expense lands in Google Sheets.</div>
+        </div>
+      </div>
+      <div style="margin-top:14px;padding-top:14px;border-top:1px solid #1F1F1F;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:10px;color:#5A5A5A;margin-bottom:16px;line-height:2.2;">
+          <span style="background:#181818;border:1px solid #262626;color:#EDEDED;padding:3px 8px;border-radius:4px;">Voice</span> &rarr;
+          <span style="background:#181818;border:1px solid #262626;color:#EDEDED;padding:3px 8px;border-radius:4px;">Telegram</span> &rarr;
+          <span style="background:#0F2318;border:1px solid #1E5C38;color:#39FF88;padding:3px 8px;border-radius:4px;">AI</span> &rarr;
+          <span style="background:#181818;border:1px solid #262626;color:#EDEDED;padding:3px 8px;border-radius:4px;">Google Sheets</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;line-height:1.6;color:#8A8A8A;">Template + setup guide<br><span style="color:#5A5A5A;">Grabbed by 10+ people</span></div>
+          <a href="https://lynk.id/after9to5build/n7pyl1qrqp6o" target="_blank" rel="noopener" style="flex-shrink:0;text-decoration:none;background:#39FF88;color:#0A0A0A;font-size:14px;font-weight:600;padding:9px 16px;border-radius:6px;">Get it free &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Connect -->
+  <div style="padding-top:20px;border-top:1px solid #1F1F1F;">
+    <div style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#8A8A8A;margin-bottom:12px;"><span style="color:#39FF88;">&gt;</span> Next build is in the works. Follow along</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;">
+      <a href="https://tiktok.com/@after9to5build" target="_blank" rel="noopener" style="flex:1 1 calc(50% - 4px);box-sizing:border-box;display:flex;justify-content:space-between;text-decoration:none;color:#EDEDED;background:#121212;border:1px solid #1F1F1F;border-radius:6px;padding:10px 12px;"><span><span style="color:#5A5A5A;">~/</span>tiktok</span><span style="color:#5A5A5A;">&#8599;</span></a>
+      <a href="https://instagram.com/after9to5build" target="_blank" rel="noopener" style="flex:1 1 calc(50% - 4px);box-sizing:border-box;display:flex;justify-content:space-between;text-decoration:none;color:#EDEDED;background:#121212;border:1px solid #1F1F1F;border-radius:6px;padding:10px 12px;"><span><span style="color:#5A5A5A;">~/</span>instagram</span><span style="color:#5A5A5A;">&#8599;</span></a>
+      <a href="https://youtube.com/@after9to5build" target="_blank" rel="noopener" style="flex:1 1 calc(50% - 4px);box-sizing:border-box;display:flex;justify-content:space-between;text-decoration:none;color:#EDEDED;background:#121212;border:1px solid #1F1F1F;border-radius:6px;padding:10px 12px;"><span><span style="color:#5A5A5A;">~/</span>youtube</span><span style="color:#5A5A5A;">&#8599;</span></a>
+      <a href="https://github.com/after9to5build" target="_blank" rel="noopener" style="flex:1 1 calc(50% - 4px);box-sizing:border-box;display:flex;justify-content:space-between;text-decoration:none;color:#EDEDED;background:#121212;border:1px solid #1F1F1F;border-radius:6px;padding:10px 12px;"><span><span style="color:#5A5A5A;">~/</span>github</span><span style="color:#5A5A5A;">&#8599;</span></a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="display:flex;justify-content:space-between;margin-top:40px;padding:16px 0 24px;border-top:1px solid #1F1F1F;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#5A5A5A;">
+    <span>after9to5build</span>
+    <span>&copy; 2026</span>
+  </div>
+
+</div>
+</div>
+
+<!-- Efek ngetik "after 9 to 5." + kursor kedip. Tanpa script, teks tetap tampil. -->
+<script>
+(function () {
+  // Cadangan kalau <style> di atas dibuang: nolin margin & warnain latar halaman.
+  document.documentElement.style.background = '#0A0A0A';
+  document.body.style.margin = '0';
+  document.body.style.background = '#0A0A0A';
+  var el = document.getElementById('a95-type');
+  var cur = document.getElementById('a95-cur');
+  if (!el || !cur) return;
+  var on = true;
+  setInterval(function () { on = !on; cur.style.opacity = on ? '1' : '0'; }, 530);
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var text = el.textContent, i = 0;
+  el.textContent = '';
+  setTimeout(function tick() {
+    el.textContent = text.slice(0, ++i);
+    if (i < text.length) setTimeout(tick, 75 + Math.random() * 70);
+  }, 700);
+})();
+</script>
