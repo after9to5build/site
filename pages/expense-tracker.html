@@ -1,12 +1,13 @@
 <!--
   Halaman produk Expense Tracker AI (landing page lynk.id, slug: expense-tracker)
   Cara pasang: Landing Pages -> buat baru -> komponen HTML -> tempel semua isi file ini -> centang "Fullscreen view" -> Save & Publish.
-  - Tombol "Ambil gratis" ngarah ke halaman checkout produk bawaan lynk.id, jadi email tetap kekumpul di lynk.id.
+  - Di bawah blok HTML ini taruh komponen Checkout Form (produk Expense Tracker). Email masuk dashboard lynk.id.
+  - JANGAN pakai satuan tinggi-layar (v-h) di file ini: lynk.id nandain iframe "data-fixed-height" (tinggi dikunci 1 layar, jadi scroll di dalam scroll). Tanpa satuan itu, tingginya otomatis ngikutin isi.
   - Gaya sama kayak landing-page.html. Simbol pakai kode HTML.
 -->
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>html,body{margin:0!important;padding:0!important;background:#0A0A0A!important;}</style>
-<div style="width:100%;min-height:100vh;background:#0A0A0A;color:#EDEDED;font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;line-height:1.57;-webkit-font-smoothing:antialiased;box-sizing:border-box;padding:0 16px;">
+<div style="width:100%;background:#0A0A0A;color:#EDEDED;font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;line-height:1.57;-webkit-font-smoothing:antialiased;box-sizing:border-box;padding:0 16px;">
 <div style="max-width:540px;margin:0 auto;padding:24px 0 0;">
 
   <!-- Wordmark bar -->
@@ -28,9 +29,11 @@
     </div>
   </div>
 
-  <!-- CTA atas -->
-  <a href="https://lynk.id/after9to5build/n7pyl1qrqp6o" target="_top" style="display:block;text-align:center;text-decoration:none;background:#39FF88;color:#0A0A0A;font-size:15px;font-weight:600;padding:12px 16px;border-radius:6px;margin-bottom:10px;">Ambil gratis</a>
-  <div style="text-align:center;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#5A5A5A;margin-bottom:36px;">Udah diambil belasan orang</div>
+  <!-- Info atas (form checkout lynk.id ada di paling bawah halaman) -->
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:#121212;border:1px solid #1F1F1F;border-radius:8px;padding:12px 14px;margin-bottom:36px;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;">
+    <span style="color:#8A8A8A;"><span style="color:#39FF88;">Gratis</span> &middot; udah diambil belasan orang</span>
+    <span style="color:#EDEDED;white-space:nowrap;">form di bawah &darr;</span>
+  </div>
 
   <!-- Cover -->
   <div style="background:#121212;border:1px solid #1F1F1F;border-radius:8px;overflow:hidden;margin-bottom:44px;">
@@ -77,17 +80,11 @@
     <div style="font-size:13px;color:#8A8A8A;">Detail setup-nya ada di panduan.</div>
   </div>
 
-  <!-- CTA bawah -->
-  <div style="background:#121212;border:1px solid #1F1F1F;border-radius:8px;padding:20px;text-align:center;margin-bottom:8px;">
-    <div style="font-size:18px;font-weight:600;letter-spacing:-0.015em;margin-bottom:4px;">Gratis. Tinggal masukin email.</div>
-    <div style="font-size:13px;color:#8A8A8A;margin-bottom:16px;">Akses template langsung dikirim ke email lo.</div>
-    <a href="https://lynk.id/after9to5build/n7pyl1qrqp6o" target="_top" style="display:block;text-decoration:none;background:#39FF88;color:#0A0A0A;font-size:15px;font-weight:600;padding:12px 16px;border-radius:6px;">Ambil gratis &rarr;</a>
-  </div>
-
-  <!-- Footer -->
-  <div style="display:flex;justify-content:space-between;margin-top:40px;padding:16px 0 24px;border-top:1px solid #1F1F1F;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#5A5A5A;">
-    <a href="https://after9to5build.lynk.id" target="_top" style="text-decoration:none;color:#5A5A5A;">after9to5build</a>
-    <span>&copy; 2026</span>
+  <!-- Penutup: ngantar ke Checkout Form lynk.id yang ada tepat di bawah blok HTML ini -->
+  <div style="text-align:center;padding:8px 0 32px;">
+    <div style="font-size:20px;font-weight:600;letter-spacing:-0.02em;margin-bottom:6px;">Gratis. Tinggal masukin email.</div>
+    <div style="font-size:13px;color:#8A8A8A;margin-bottom:18px;">Isi form di bawah, akses template langsung dikirim ke email lo.</div>
+    <div style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:22px;color:#39FF88;line-height:1;">&darr;</div>
   </div>
 
 </div>
