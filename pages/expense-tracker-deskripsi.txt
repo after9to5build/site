@@ -1,0 +1,18 @@
+Catat pengeluaran cukup pakai voice note.
+
+Kirim voice note ke bot Telegram, pengeluaran lo langsung kecatat rapi di Google Sheets. Gak perlu buka aplikasi, gak perlu ngetik.
+
+CARA KERJANYA
+1. Kirim voice note ke bot Telegram lo, misalnya "bensin lima puluh ribu".
+2. AI ngubah voice note jadi data pengeluaran, otomatis lewat Make.com.
+3. Semua pengeluaran ngumpul rapi di Google Sheets, siap lo pantau.
+
+YANG LO DAPET
+- Template Make.com, tinggal import
+- Panduan instalasi, dari nol sampai jalan
+- Penjelasan step-by-step, biar bisa lo kembangin sendiri
+
+YANG LO BUTUHIN
+Akun Telegram, Make.com, dan Google. Detail setup-nya ada di panduan.
+
+Gratis. Udah diambil belasan orang.
