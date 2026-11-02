@@ -3,7 +3,8 @@
 Source for [after9to5build.lynk.id](https://after9to5build.lynk.id): the landing page and its images.
 
 ```
-landing-page.html   pasted into a lynk.id HTML component (Fullscreen view on)
+landing-page.html   homepage, pasted into a lynk.id HTML component (Fullscreen view on)
+pages/              product pages (one lynk.id landing page each)
 img/                covers & thumbnails, served via jsDelivr
 meta/               social preview image + favicon (HTML sources, render with meta/render.sh)
 ```

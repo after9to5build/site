@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- Sumber cover produk Expense Tracker AI (1080x1080). Render: bash render.sh -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;width:1080px;height:1080px;overflow:hidden;background:#0A0A0A;}
+  .wrap{width:1080px;height:1080px;padding:84px 80px 80px;display:flex;flex-direction:column;color:#EDEDED;font-family:'Geist',sans-serif;-webkit-font-smoothing:antialiased;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:26px;}
+  .mark span{color:#39FF88;}
+  .pill{font-size:20px;color:#39FF88;border:1.5px solid #1E5C38;border-radius:999px;padding:8px 20px;letter-spacing:0.04em;}
+  h1{margin:96px 0 18px;font-size:104px;line-height:1;font-weight:600;letter-spacing:-0.04em;}
+  .sub{font-size:44px;font-weight:500;letter-spacing:-0.02em;color:#8A8A8A;}
+  .sub b{color:#EDEDED;font-weight:500;}
+  .flow{margin-top:auto;display:flex;align-items:center;gap:28px;}
+  .card{background:#121212;border:1.5px solid #222;border-radius:16px;}
+  .chat{width:330px;padding:26px;}
+  .chat .lbl,.sheet .lbl{font-size:17px;color:#6A6A6A;margin-bottom:18px;}
+  .bubble{background:#1A1A1A;border:1.5px solid #262626;border-radius:16px 16px 4px 16px;padding:18px;display:flex;align-items:center;gap:14px;}
+  .play{width:46px;height:46px;border-radius:50%;background:#39FF88;flex-shrink:0;position:relative;}
+  .play:after{content:'';position:absolute;left:18px;top:14px;border-left:14px solid #0A0A0A;border-top:9px solid transparent;border-bottom:9px solid transparent;}
+  .wave{display:flex;align-items:center;gap:4px;height:40px;flex:1;}
+  .wave i{display:block;width:4px;border-radius:2px;background:#8A8A8A;}
+  .dur{font-size:16px;color:#8A8A8A;}
+  .arrow{font-size:40px;color:#39FF88;}
+  .sheet{flex:1;padding:26px;}
+  table{width:100%;border-collapse:collapse;font-size:21px;}
+  th{text-align:left;font-weight:400;color:#6A6A6A;font-size:16px;padding:0 0 12px;}
+  td{padding:13px 0;border-top:1.5px solid #1F1F1F;}
+  td.n{text-align:right;}
+  th.n{text-align:right;}
+  tr.new td{color:#39FF88;}
+  .foot{margin-top:40px;display:flex;gap:14px;font-size:20px;color:#8A8A8A;}
+  .foot span{background:#141414;border:1.5px solid #222;border-radius:8px;padding:8px 16px;}
+</style></head>
+<body><div class="wrap">
+  <div class="top mono">
+    <div class="mark">after9to5<span>build</span></div>
+    <div class="pill">FREE TEMPLATE</div>
+  </div>
+
+  <h1>Expense Tracker AI</h1>
+  <div class="sub">Voice note <b>&rarr;</b> Google Sheets.</div>
+
+  <div class="flow">
+    <div class="card chat">
+      <div class="lbl mono">telegram</div>
+      <div class="bubble">
+        <div class="play"></div>
+        <div class="wave">
+          <i style="height:12px"></i><i style="height:22px"></i><i style="height:34px"></i><i style="height:18px"></i><i style="height:28px"></i><i style="height:38px"></i><i style="height:24px"></i><i style="height:14px"></i><i style="height:30px"></i><i style="height:20px"></i><i style="height:10px"></i><i style="height:26px"></i><i style="height:16px"></i>
+        </div>
+        <div class="dur mono">0:04</div>
+      </div>
+    </div>
+    <div class="arrow mono">&rarr;</div>
+    <div class="card sheet">
+      <div class="lbl mono">google sheets</div>
+      <table class="mono">
+        <tr><th>item</th><th>kategori</th><th class="n">jumlah</th></tr>
+        <tr><td>Bensin</td><td>Transport</td><td class="n">50.000</td></tr>
+        <tr><td>Makan siang</td><td>Makan</td><td class="n">35.000</td></tr>
+        <tr class="new"><td>Kopi</td><td>Jajan</td><td class="n">25.000</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="foot mono"><span>Telegram</span><span>Make.com</span><span>Google Sheets</span></div>
+</div></body></html>

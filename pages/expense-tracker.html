@@ -1,0 +1,100 @@
+<!--
+  Halaman produk Expense Tracker AI (landing page lynk.id, slug: expense-tracker)
+  Cara pasang: Landing Pages -> buat baru -> komponen HTML -> tempel semua isi file ini -> centang "Fullscreen view" -> Save & Publish.
+  - Tombol "Ambil gratis" ngarah ke halaman checkout produk bawaan lynk.id, jadi email tetap kekumpul di lynk.id.
+  - Gaya sama kayak landing-page.html. Simbol pakai kode HTML.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>html,body{margin:0!important;padding:0!important;background:#0A0A0A!important;}</style>
+<div style="width:100%;min-height:100vh;background:#0A0A0A;color:#EDEDED;font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;line-height:1.57;-webkit-font-smoothing:antialiased;box-sizing:border-box;padding:0 16px;">
+<div style="max-width:540px;margin:0 auto;padding:24px 0 0;">
+
+  <!-- Wordmark bar -->
+  <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid #1F1F1F;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;">
+    <a href="https://after9to5build.lynk.id" target="_top" style="text-decoration:none;color:#EDEDED;font-size:14px;font-weight:600;letter-spacing:-0.02em;">after9to5<span style="color:#39FF88;font-weight:500;">build</span><span style="color:#3A3A3A;font-weight:400;margin:0 8px;">/</span><span style="color:#8A8A8A;font-size:11px;font-weight:400;">templates</span></a>
+    <a href="https://after9to5build.lynk.id" target="_top" style="text-decoration:none;font-size:11px;color:#8A8A8A;">&larr; home</a>
+  </div>
+
+  <!-- Hero -->
+  <div style="margin:36px 0 28px;">
+    <div style="display:inline-block;padding:3px 10px;border-radius:999px;background:#121212;border:1px solid #262626;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#8A8A8A;margin-bottom:18px;">
+      <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#39FF88;margin-right:6px;vertical-align:middle;position:relative;top:-1px;"></span>Free template &middot; Make.com
+    </div>
+    <h1 style="margin:0 0 14px;font-size:clamp(28px,7.6vw,38px);line-height:1.2;font-weight:600;letter-spacing:-0.03em;">
+      Catat pengeluaran cukup pakai voice note.
+    </h1>
+    <div style="font-size:15px;line-height:1.6;color:#8A8A8A;">
+      Kirim voice note ke bot Telegram, pengeluaran lo langsung kecatat rapi di Google Sheets. Gak perlu buka aplikasi, gak perlu ngetik.
+    </div>
+  </div>
+
+  <!-- CTA atas -->
+  <a href="https://lynk.id/after9to5build/n7pyl1qrqp6o" target="_top" style="display:block;text-align:center;text-decoration:none;background:#39FF88;color:#0A0A0A;font-size:15px;font-weight:600;padding:12px 16px;border-radius:6px;margin-bottom:10px;">Ambil gratis</a>
+  <div style="text-align:center;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#5A5A5A;margin-bottom:36px;">Udah diambil belasan orang</div>
+
+  <!-- Cover -->
+  <div style="background:#121212;border:1px solid #1F1F1F;border-radius:8px;overflow:hidden;margin-bottom:44px;">
+    <img src="https://cdn.jsdelivr.net/gh/after9to5build/site@main/img/expense-tracker.webp" alt="Expense Tracker AI: voice note ke Google Sheets" style="display:block;width:100%;height:auto;border:0;">
+  </div>
+
+  <!-- Cara kerja -->
+  <div style="margin-bottom:44px;">
+    <div style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#EDEDED;letter-spacing:0.02em;margin-bottom:12px;"><span style="color:#39FF88;margin-right:6px;">&#9679;</span>Cara kerjanya</div>
+    <div style="background:#121212;border:1px solid #1F1F1F;border-radius:8px;">
+      <div style="display:flex;gap:14px;padding:16px;border-bottom:1px solid #1F1F1F;">
+        <span style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:12px;color:#39FF88;padding-top:2px;">01</span>
+        <div><div style="font-size:15px;font-weight:600;margin-bottom:2px;">Kirim voice note</div><div style="font-size:13px;color:#A1A1A1;">Ngomong aja ke bot Telegram lo, misalnya "bensin lima puluh ribu".</div></div>
+      </div>
+      <div style="display:flex;gap:14px;padding:16px;border-bottom:1px solid #1F1F1F;">
+        <span style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:12px;color:#39FF88;padding-top:2px;">02</span>
+        <div><div style="font-size:15px;font-weight:600;margin-bottom:2px;">AI yang nyatet</div><div style="font-size:13px;color:#A1A1A1;">Voice note lo diubah jadi data pengeluaran, otomatis lewat Make.com.</div></div>
+      </div>
+      <div style="display:flex;gap:14px;padding:16px;">
+        <span style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:12px;color:#39FF88;padding-top:2px;">03</span>
+        <div><div style="font-size:15px;font-weight:600;margin-bottom:2px;">Kebaca di Google Sheets</div><div style="font-size:13px;color:#A1A1A1;">Semua pengeluaran ngumpul rapi di satu sheet, siap lo pantau.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Isi template -->
+  <div style="margin-bottom:44px;">
+    <div style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#EDEDED;letter-spacing:0.02em;margin-bottom:12px;"><span style="color:#39FF88;margin-right:6px;">&#9679;</span>Yang lo dapet</div>
+    <div style="background:#121212;border:1px solid #1F1F1F;border-radius:8px;padding:6px 16px;">
+      <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #1F1F1F;"><span style="color:#39FF88;font-family:'JetBrains Mono',ui-monospace,monospace;">+</span><div><span style="font-weight:600;">Template Make.com</span><span style="color:#8A8A8A;"> &middot; tinggal import</span></div></div>
+      <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #1F1F1F;"><span style="color:#39FF88;font-family:'JetBrains Mono',ui-monospace,monospace;">+</span><div><span style="font-weight:600;">Panduan instalasi</span><span style="color:#8A8A8A;"> &middot; dari nol sampai jalan</span></div></div>
+      <div style="display:flex;gap:12px;padding:12px 0;"><span style="color:#39FF88;font-family:'JetBrains Mono',ui-monospace,monospace;">+</span><div><span style="font-weight:600;">Penjelasan step-by-step</span><span style="color:#8A8A8A;"> &middot; biar bisa lo kembangin sendiri</span></div></div>
+    </div>
+  </div>
+
+  <!-- Kebutuhan -->
+  <div style="margin-bottom:44px;">
+    <div style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#EDEDED;letter-spacing:0.02em;margin-bottom:12px;"><span style="color:#39FF88;margin-right:6px;">&#9679;</span>Yang lo butuhin</div>
+    <div style="font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:12px;line-height:2.4;margin-bottom:6px;">
+      <span style="background:#181818;border:1px solid #262626;padding:4px 10px;border-radius:4px;">Telegram</span>
+      <span style="background:#181818;border:1px solid #262626;padding:4px 10px;border-radius:4px;">Make.com</span>
+      <span style="background:#181818;border:1px solid #262626;padding:4px 10px;border-radius:4px;">Google Sheets</span>
+    </div>
+    <div style="font-size:13px;color:#8A8A8A;">Detail setup-nya ada di panduan.</div>
+  </div>
+
+  <!-- CTA bawah -->
+  <div style="background:#121212;border:1px solid #1F1F1F;border-radius:8px;padding:20px;text-align:center;margin-bottom:8px;">
+    <div style="font-size:18px;font-weight:600;letter-spacing:-0.015em;margin-bottom:4px;">Gratis. Tinggal masukin email.</div>
+    <div style="font-size:13px;color:#8A8A8A;margin-bottom:16px;">Akses template langsung dikirim ke email lo.</div>
+    <a href="https://lynk.id/after9to5build/n7pyl1qrqp6o" target="_top" style="display:block;text-decoration:none;background:#39FF88;color:#0A0A0A;font-size:15px;font-weight:600;padding:12px 16px;border-radius:6px;">Ambil gratis &rarr;</a>
+  </div>
+
+  <!-- Footer -->
+  <div style="display:flex;justify-content:space-between;margin-top:40px;padding:16px 0 24px;border-top:1px solid #1F1F1F;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:11px;color:#5A5A5A;">
+    <a href="https://after9to5build.lynk.id" target="_top" style="text-decoration:none;color:#5A5A5A;">after9to5build</a>
+    <span>&copy; 2026</span>
+  </div>
+
+</div>
+</div>
+<script>
+  // Cadangan kalau <style> di atas dibuang: nolin margin body iframe lynk.id.
+  document.documentElement.style.background = '#0A0A0A';
+  document.body.style.margin = '0';
+  document.body.style.background = '#0A0A0A';
+</script>
