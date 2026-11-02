@@ -5,6 +5,7 @@ Source for [after9to5build.lynk.id](https://after9to5build.lynk.id): the landing
 ```
 landing-page.html   homepage, pasted into a lynk.id HTML component (Fullscreen view on)
 pages/              product pages (one lynk.id landing page each)
+head/               CSS for lynk.id "Custom Head Script" (dark checkout form)
 img/                covers & thumbnails, served via jsDelivr
 meta/               social preview image + favicon (HTML sources, render with meta/render.sh)
 ```
