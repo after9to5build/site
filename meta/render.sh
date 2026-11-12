@@ -10,4 +10,5 @@ render() { # $1=html $2=png $3=lebar $4=tinggi
 render og-image.html og-image.png 1200 630
 render favicon.html favicon.png 512 512
 render expense-tracker-cover.html expense-tracker-cover.png 1080 1080
-echo "Selesai: og-image.png, favicon.png, expense-tracker-cover.png"
+render notulen-rapat-cover.html notulen-rapat-cover.png 1080 1080
+echo "Selesai: og-image.png, favicon.png, expense-tracker-cover.png, notulen-rapat-cover.png"

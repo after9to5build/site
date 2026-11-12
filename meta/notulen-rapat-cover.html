@@ -1,0 +1,80 @@
+<!doctype html>
+<!-- Sumber cover produk Notulen Rapat (1080x1080, palet Pinus). Render: bash render.sh -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;700;800;900&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;width:1080px;height:1080px;overflow:hidden;background:#0A3328;}
+  .wrap{position:relative;width:1080px;height:1080px;padding:76px 80px;color:#fff;font-family:'Urbanist',sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden;}
+  .dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 2px,transparent 2.2px);background-size:30px 30px;}
+  .mono{font-family:'Geist Mono',monospace;letter-spacing:.06em;}
+  .top{position:relative;display:flex;justify-content:space-between;align-items:center;font-size:24px;}
+  .mark{color:rgba(255,255,255,.9);}
+  .mark span{color:#39FF88;}
+  .pill{font-size:19px;color:#0A3328;background:#39FF88;border-radius:999px;padding:9px 20px;text-transform:uppercase;}
+  h1{position:relative;margin:70px 0 22px;font-size:118px;line-height:.98;font-weight:900;letter-spacing:-.04em;}
+  .mk{position:relative;display:inline-block;isolation:isolate;color:#0A3328;padding:0 .1em;margin-left:-.06em;}
+  .mk:before{content:"";position:absolute;left:-.02em;right:-.04em;top:.12em;bottom:0;background:#39FF88;border-radius:20px 40px 18px 36px/34px 18px 38px 20px;transform:rotate(-1.6deg);z-index:-1;}
+  .sub{position:relative;font-size:34px;line-height:1.3;font-weight:600;color:rgba(255,255,255,.78);max-width:470px;}
+  .sub b{color:#fff;font-weight:800;}
+  /* kartu rekaman */
+  .rec{position:absolute;left:80px;top:650px;width:330px;background:#124538;border-radius:26px;padding:24px;transform:rotate(-4deg);}
+  .rec .lbl{font-size:16px;color:rgba(255,255,255,.6);margin-bottom:16px;text-transform:uppercase;}
+  .bub{display:flex;align-items:center;gap:14px;}
+  .dot{width:48px;height:48px;border-radius:50%;background:#39FF88;flex:none;display:grid;place-items:center;}
+  .dot i{width:16px;height:16px;border-radius:50%;background:#0A3328;}
+  .wave{display:flex;align-items:center;gap:5px;height:44px;flex:1;}
+  .wave i{display:block;width:5px;border-radius:3px;background:rgba(255,255,255,.55);}
+  .dur{font-size:17px;color:rgba(255,255,255,.7);}
+  /* kartu email */
+  .mail{position:absolute;right:58px;top:505px;width:430px;background:#fff;border-radius:30px;padding:30px 30px 26px;color:#0A3328;outline:6px solid #39FF88;box-shadow:16px 20px 0 #06231C;transform:rotate(3deg);}
+  .m-lbl{font-size:14px;color:#4B6A5F;text-transform:uppercase;}
+  .m-h{font-weight:800;font-size:34px;margin-top:6px;letter-spacing:-.01em;}
+  .m-bar{width:60px;height:7px;border-radius:4px;background:#39FF88;margin:12px 0 18px;}
+  .t{border-radius:12px;padding:14px 16px;margin-bottom:12px;border-left:7px solid;}
+  .t b{display:block;font-size:24px;font-weight:800;}
+  .t i{font-style:normal;font-size:18px;color:#4B6A5F;}
+  .t span{float:right;color:#fff;font-size:13px;font-weight:800;letter-spacing:.08em;padding:4px 10px;border-radius:99px;margin-top:4px;}
+  .kuning{background:#FFF4D6;border-color:#D97706;}.kuning span{background:#D97706;}
+  .merah{background:#FDE8E8;border-color:#DC2626;}.merah span{background:#DC2626;}
+  .hijau{background:#E8F6EE;border-color:#0A3328;}
+  .btn{display:inline-block;margin-top:4px;background:#0A3328;color:#39FF88;font-weight:800;font-size:19px;padding:12px 18px;border-radius:12px;}
+  /* coretan & tulisan kuas */
+  .hand{position:absolute;font-family:'SignPainter';font-weight:600;color:#39FF88;line-height:1;white-space:nowrap;}
+  .h1{left:88px;top:868px;font-size:56px;transform:rotate(-5deg);}
+  svg{position:absolute;overflow:visible;}
+  svg path{fill:none;stroke:#39FF88;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;}
+  .arr{left:440px;top:720px;width:110px;height:88px;transform:scaleX(-1) rotate(20deg);}
+  .foot{position:absolute;left:80px;right:80px;bottom:62px;display:flex;gap:12px;font-size:19px;}
+  .foot span{background:#124538;border-radius:10px;padding:9px 16px;color:rgba(255,255,255,.82);}
+</style></head>
+<body><div class="wrap"><div class="dots"></div>
+  <div class="top mono">
+    <div class="mark">after9to5<span>build</span></div>
+    <div class="pill">template gratis</div>
+  </div>
+
+  <h1>Notulen<br><span class="mk">Rapat</span></h1>
+  <div class="sub">Rekaman rapat <b>&rarr;</b> tugas tiap orang, langsung ke email.</div>
+
+  <div class="rec">
+    <div class="lbl mono">rekaman rapat</div>
+    <div class="bub"><div class="dot"><i></i></div>
+      <div class="wave"><i style="height:14px"></i><i style="height:26px"></i><i style="height:38px"></i><i style="height:20px"></i><i style="height:32px"></i><i style="height:42px"></i><i style="height:24px"></i><i style="height:16px"></i><i style="height:34px"></i><i style="height:22px"></i><i style="height:12px"></i><i style="height:28px"></i></div>
+      <div class="dur mono">58:12</div></div>
+  </div>
+  <svg class="arr" viewBox="0 0 300 240"><path d="M270 215 C 225 150, 150 105, 52 42"/><path d="M34 100 L 48 38 L 110 56"/></svg>
+
+  <div class="mail">
+    <div class="m-lbl mono">notulen rapat</div>
+    <div class="m-h">Tugas dari rapat</div><div class="m-bar"></div>
+    <div class="t kuning"><span>BESOK</span><b>Follow up vendor</b><i>Kam, 12 Nov</i></div>
+    <div class="t merah"><span>HARI INI</span><b>Update deck ke klien</b><i>Deadline-nya hari ini</i></div>
+    <div class="t hijau"><b>Rilis siaran pers</b><i>Jum, 20 Nov &middot; "Jumat depan"</i></div>
+    <div class="btn">Buka daftar tugas</div>
+  </div>
+
+  <div class="hand h1">gak ada yang kelupaan</div>
+
+  <div class="foot mono"><span>Google Sheet</span><span>Gemini</span><span>Gmail</span></div>
+</div></body></html>
